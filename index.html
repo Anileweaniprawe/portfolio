@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ====== BLOKADA INDEKSOWANIA — strona dostępna tylko z linkiem ====== -->
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+  <meta name="googlebot" content="noindex, nofollow" />
+
+  <title>Ewelina Pilatowicz </title>
+
+  <!-- Style w osobnym pliku -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-top">
+        <span class="upper">Portfolio</span>
+      </div>
+
+      <h1 class="hero-title display">Hi, I'm Ewelina</h1>
+
+      <div class="hero-sub">
+        <div class="hero-name">
+          <p>Combining hands-on data analysis, machine learning and business understanding.</p>
+        </div>
+        <div class="hero-tag">MAKING DATA USEFUL.</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== INTERAKTYWNE FOLDERY ===================== -->
+  <main class="wrap">
+    <div class="tabs" role="tablist" aria-label="Portfolio sections">
+      <button class="tab" role="tab" aria-selected="true"  aria-controls="p-about"     id="t-about">About</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-projects"  id="t-projects">Projects</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-skills"     id="t-skills">Skills</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-awards"     id="t-awards">Achievements</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-experience" id="t-experience">Experience</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-education"  id="t-education">Education</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-community"  id="t-community">Community</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p-contact"    id="t-contact">Contact</button>
+    </div>
+
+    <div class="panel-box">
+
+      <!-- ABOUT -->
+      <section class="panel active" id="p-about" role="tabpanel" aria-labelledby="t-about">
+        <div class="about">
+
+          <!-- LEWA, WĘŻSZA KOLUMNA -->
+          <aside class="about-side">
+            <p class="about-loc">Located in Warsaw</p>
+            <p class="about-status">Available for full-time roles</p>
+
+            <ul class="about-keys">
+              <li>Data analysis</li>
+              <li>Machine learning</li>
+              <li>Product research</li>
+              <li>Process analysis</li>
+              <li>Leadership</li>
+              <li>Cross-functional collaboration</li>
+            </ul>
+          </aside>
+
+          <!-- PRAWA, SZERSZA KOLUMNA -->
+          <div class="about-main">
+            <p class="about-text">
+              My background in biomedical engineering has shaped the way I approach data - with attention to quality, validation and the context behind the numbers. I built on this foundation through my experience as a Business Analyst at Doctor.One, where I worked with quantitative and qualitative research, product usage data and process analysis.<br>
+              Beyond the technical work, I am confident presenting ideas and analytical findings to different audiences. Client-facing projects, hackathons and team leadership have strengthened my public speaking, storytelling and ability to explain complex topics in a clear and engaging way.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="panel" id="p-projects" role="tabpanel" aria-labelledby="t-projects" hidden>
+        <div class="section-heading">
+          <h3 class="display">Selected Data &amp; AI Projects</h3>
+          <p class="section-intro">
+            Academic and independent projects focused on end-to-end modelling,
+            robust evaluation, explainability and working with complex real-world data.
+          </p>
+        </div>
+
+        <div class="grid2 project-grid">
+
+          <!-- PARKINSON -->
+          <article class="card project-card">
+            <div class="row-head">
+              <h4>Parkinson's Detection from Voice Biomarkers</h4>
+              <span class="meta">EngineeringThesis · ongoing</span>
+            </div>
+
+            <p class="oneliner">A reproducible machine learning workflow for classifying Parkinson's disease from repeated voice recordings.</p>
+
+            <p><strong>Approach:</strong> Built a subject-level evaluation pipeline to prevent recordings from the same person appearing in both training and test data. I compare SVM, Random Forest and XGBoost, test preprocessing and class-balancing strategies, and use SHAP to examine which voice features influence model predictions.
+            <br> <br>
+          
+            The next stage will include cross-lingual external validation on an independent dataset recorded in another language to assess how well the identified voice biomarkers generalise.</p>
+
+            <p class="project-focus"><strong>Key focus:</strong> Leakage-safe validation, realistic performance estimation, model interpretability and cross-lingual generalisation.</p>
+
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">XGBoost</span><span class="tag">SHAP</span>
+            </div>
+           
+            <div class="project-links">
+              <a href="https://github.com/Anileweaniprawe/parkinsons_voice_biomarkers" class="project-link" target="_blank" rel="noopener">View initial project on GitHub</a>
+            </div>
+            
+          </article>
+
+          <!-- THYROID -->
+          <article class="card project-card">
+            <div class="row-head">
+              <h4>Thyroid Disease Prediction</h4>
+              <span class="meta">2026</span>
+            </div>
+            <div class="meta">Machine Learning Course · Dublin City University </div>
+
+            <p class="oneliner">An end-to-end classification project for highly imbalanced tabular data.</p>
+
+            <p><strong>Approach:</strong> Cleaned and explored the UCI Sick Thyroid dataset, compared five classifiers and applied SMOTE only within cross-validation folds. We tuned the decision threshold using F-beta to prioritise recall, engineered an additional clinical ratio feature and used SHAP to interpret the final model.</p>
+
+            <div class="facts">
+              <b>0.935 <span>recall</span></b>
+              <b>0.995 <span>ROC AUC</span></b>
+              <b>0.927 <span>F-beta</span></b>
+            </div>
+
+            <div class="tags">
+              <span class="tag">XGBoost</span><span class="tag">SMOTE</span><span class="tag">SHAP</span><span class="tag">Threshold tuning</span><span class="tag">Feature engineering</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/Anileweaniprawe/thyroid_disease_prediction" class="project-link" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </article>
+
+          <!-- NEUROSURGICAL DATABASE -->
+          <article class="card project-card">
+            <div class="row-head">
+              <h4>Neurosurgical Department Database</h4>
+              <span class="meta">2025</span>
+            </div>
+            <div class="meta">Databases course</div>
+
+            <p class="oneliner">A relational database supporting patient admissions, hospital stays, medical procedures, staff assignments and discharge processes.</p>
+
+            <p><strong>Approach:</strong> Developed the database and designed the ER model, then implemented SQL views, functions, stored procedures and triggers to automate workflows and enforce rules such as staff licence validity and room capacity.</p>
+
+            <div class="tags">
+              <span class="tag">MySQL</span><span class="tag">SQL</span><span class="tag">ER modelling</span><span class="tag">Relational databases</span>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="panel" id="p-skills" role="tabpanel" aria-labelledby="t-skills" hidden>
+        <h3 class="display">Skills</h3>
+        <div class="card">
+          <div class="skillrow">
+            <div class="k">Programming &amp; Data</div>
+            <div class="v">Python · Pandas · NumPy · SQL · MySQL · Jupyter · Git</div>
+          </div>
+
+          <div class="skillrow">
+            <div class="k">Data Analysis</div>
+            <div class="v">data cleaning · exploratory data analysis · feature engineering · data visualisation · quantitative survey analysis · qualitative research synthesis · analytical reporting</div>
+          </div>
+
+          <div class="skillrow">
+            <div class="k">Machine Learning</div>
+            <div class="v">scikit-learn · Linear Regression ·Decision Trees · XGBoost · SVM · Random Forest · classification · group-aware and subject-level cross-validation · imbalanced data · SMOTE · threshold tuning</div>
+          </div>
+
+          <div class="skillrow">
+            <div class="k">Evaluation &amp; Explainability</div>
+            <div class="v">ROC AUC · precision · recall · F1 and F-beta · leakage prevention · realistic performance estimation · SHAP · Optuna</div>
+          </div>
+
+          <div class="skillrow">
+            <div class="k">Databases &amp; Engineering</div>
+            <div class="v">relational database design · ER modelling · views · stored procedures · triggers · REST APIs · Docker, Hadoop and Spark fundamentals</div>
+          </div>
+
+          <div class="skillrow">
+            <div class="k">Research &amp; Business Analysis</div>
+            <div class="v">quantitative and qualitative research · process analysis · patient journey mapping · benchmarking · requirements analysis · stakeholder reporting</div>
+          </div>
+
+          <div class="skillrow">
+            <div class="k">Prototyping &amp; Communication</div>
+            <div class="v">HTML, CSS, React fundamentals · UX prototyping · data storytelling · stakeholder presentations · public speaking</div>
+          </div>
+
+          <div class="skillrow">
+            <div class="k">Languages</div>
+            <div class="v">Polish native · English C1</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AWARDS -->
+      <section class="panel" id="p-awards" role="tabpanel" aria-labelledby="t-awards" hidden>
+        <h3 class="display">Achievements</h3>
+        <p class="lede">
+          Projects developed during hackathons and ideathons, from initial research to a working
+          concept and final pitch.
+        </p>
+
+        <h4 class="subhead">Scholarships</h4>
+        <div class="card">
+          <div class="scholar-row">
+            <div class="scholar-txt">
+              <h4>Młodzi w Łodzi Scholarship</h4>
+              <p>Employer-funded scholarship programme supporting high-achieving students at Łódź universities and helping them develop their careers in cooperation with local companies</p>
+            </div>
+            <span class="meta">2025</span>
+          </div>
+          <div class="scholar-row">
+            <div class="scholar-txt">
+              <h4>Rector's Scholarship</h4>
+              <p>Awarded in multiple terms for academic results.</p>
+            </div>
+            <span class="meta">Multiple terms</span>
+          </div>
+        </div>
+
+        <h4 class="subhead">Hackathons &amp; Ideathons</h4>
+
+        <!-- 1 — Ideathon UniLodz · 2026 -->
+        <article class="ach">
+          <figure class="img-slot ach-photo">
+            <img src="images/award-ideathon-2026.jpg" alt="Ideathon UniLodz 2026" />
+          </figure>
+          <div class="ach-body">
+            <div class="ach-head">
+              <h4>2nd Place · Ideathon</h4>
+              <div class="ach-event meta">Public Sector Career Pathway</div>
+              <span class="ach-award meta">2026</span>
+            </div>
+            <dl class="ach-lines">
+              <div><dt>Challenge</dt><dd>How could the City of Łódź make public-sector careers more attractive and accessible to ambitious students and graduates?</dd></div>
+              <div><dt>My contribution</dt><dd>Led the team, conducted qualitative stakeholder interviews with mentors and domain experts, built the front-end prototype in HTML, CSS and React, and delivered the final pitch.</dd></div>
+              <div><dt>Outcome</dt><dd>A prototype module for the existing City of Łódź application that replaces lengthy, difficult-to-navigate PDF job postings with clear role descriptions, transparent requirements and accessible career information.</dd></div>
+            </dl>
+            <div class="tags"><span class="tag">Team leadership</span><span class="tag">Stakeholder interviews</span><span class="tag">React prototyping</span><span class="tag">Pitching</span></div>
+          </div>
+        </article>
+
+        <!-- 2 — Hack na Zdrowie 5 · 2026 -->
+        <article class="ach">
+          <figure class="img-slot ach-photo">
+            <img src="images/award-hacknazdrowie5.jpg" alt="Hack na Zdrowie 5" />
+          </figure>
+          <div class="ach-body">
+            <div class="ach-head">
+              <h4>3rd Place · Hack na Zdrowie 5</h4>
+              <div class="ach-event meta">Breast Cancer Patient Navigator · Salve Medica challenge</div>
+              <span class="ach-award meta">2026</span>
+            </div>
+            <dl class="ach-lines">
+              <div><dt>Challenge</dt><dd>How could breast cancer patients receive clear, practical guidance and support throughout the treatment journey after diagnosis?</dd></div>
+              <div><dt>My contribution</dt><dd>Analysed survey data, helped design the user experience and patient journey, developed the front-end prototype and prepared the final presentation.</dd></div>
+              <div><dt>Outcome</dt><dd>A digital navigator guiding patients through each stage of treatment and connecting them with a Breast Cancer Unit coordinator, with follow-up discussions about a potential implementation ongoing.</dd></div>
+            </dl>
+            <div class="tags"><span class="tag">Data analysis</span><span class="tag">UX design</span><span class="tag">Patient journey mapping</span><span class="tag">Front-end prototyping</span></div>
+          </div>
+        </article>
+
+        <!-- 3 — The Circular Shift · 2025 -->
+        <article class="ach">
+          <figure class="img-slot ach-photo">
+            <img src="images/award-datacenter.jpg" alt="Circular Data Center Strategy" />
+            </figure>
+          <div class="ach-body">
+            <div class="ach-head">
+              <h4>1st place · The Circular Shift: Business Reinvented </h4>
+              <div class="ach-event meta">Circular Data Center Strategy · INNOWO</div>
+              <span class="ach-award meta">2025</span>
+            </div>
+            <dl class="ach-lines">
+              <div><dt>Challenge</dt><dd>How could data centre infrastructure operate within a more circular and resource-efficient business model?</dd></div>
+              <div><dt>My contribution</dt><dd>Led the analysis, resource-flow mapping and development of a five-year implementation roadmap.</dd></div>
+              <div><dt>Outcome</dt><dd>A circular business model designed to extend infrastructure value and reduce resource waste, later presented at the European Sustainability Congress in Warsaw.</dd></div>
+            </dl>
+            <div class="tags"><span class="tag">Research</span><span class="tag">Business modelling</span><span class="tag">Resource-flow mapping</span><span class="tag">Implementation strategy</span></div>
+          </div>
+        </article>
+
+        <!-- 4 — HackYeah · 2025 -->
+        <article class="ach">
+          <figure class="img-slot ach-photo">
+            <img src="images/award-airaware.jpg" alt="AirAware" />
+          </figure>
+          <div class="ach-body">
+            <div class="ach-head">
+              <h4>Finalist · HackYeah </h4>
+              <div class="ach-event meta">AirAware · Biohacking track</div>
+              <span class="ach-award meta">2025</span>
+            </div>
+            <dl class="ach-lines">
+              <div><dt>Challenge</dt><dd>How could a digital tool help users manage stress and regulate their emotional state through simple, accessible exercises?</dd></div>
+              <div><dt>My contribution</dt><dd>Designed the user experience, structured the solution's core journey and prepared the final presentation and pitch.</dd></div>
+              <div><dt>Outcome</dt><dd>A mobile application supporting users through guided breathing and calming exercises, selected as a finalist in the Biohacking category at Europe's largest stationary hackathon.</dd></div>
+            </dl>
+            <div class="tags"><span class="tag">UX design</span><span class="tag">User journey design</span><span class="tag">Concept development</span><span class="tag">Pitching</span></div>
+          </div>
+        </article>
+
+        <!-- 5 — Ideathon UniLodz · 2025 -->
+        <article class="ach">
+          <figure class="img-slot ach-photo">
+            <img src="images/award-ideathon-2025.jpg" alt="Employer Brand Reframing Concept" />
+            
+          </figure>
+          <div class="ach-body">
+            <div class="ach-head">
+              <h4>2nd place · Ideathon </h4>
+              <div class="ach-event meta">Employer Brand Reframing Concept</div>
+              <span class="ach-award meta"> 2025</span>
+            </div>
+            <dl class="ach-lines">
+              <div><dt>Challenge</dt><dd>How could a company from the tobacco sector communicate its employer brand more transparently and become more relevant to prospective candidates?</dd></div>
+              <div><dt>My contribution</dt><dd>Led the team, conducted stakeholder interviews, analysed the collected research data, developed the prototype and delivered the final project and pitch.</dd></div>
+              <div><dt>Outcome</dt><dd>A research-backed employer-brand concept and prototype presenting the organisation's roles, culture and development opportunities in a clearer, more candidate-focused way.</dd></div>
+            </dl>
+            <div class="tags"><span class="tag">Team leadership</span><span class="tag">Qualitative research</span><span class="tag">Data analysis</span><span class="tag">Prototyping</span></div>
+          </div>
+        </article>
+
+        <!-- 6 — Hack na Zdrowie 4 · 2025 -->
+        <article class="ach">
+          <figure class="img-slot ach-photo">
+            <img src="images/award-koordynujmy.jpg" alt="KoordynujMY" />
+            
+          </figure>
+          <div class="ach-body">
+            <div class="ach-head">
+              <h4>3rd place · Hack na Zdrowie 4</h4>
+              <div class="ach-event meta">KoordynujMY · AstraZeneca challenge</div>
+              <span class="ach-award meta"> 2025</span>
+            </div>
+            <dl class="ach-lines">
+              <div><dt>Challenge</dt><dd>How could patients better understand and navigate coordinated care pathways offered by participating healthcare centres?</dd></div>
+              <div><dt>My contribution</dt><dd>Conducted research, mapped the patient pathway, supported requirements analysis, developed the prototype and delivered the final pitch.</dd></div>
+              <div><dt>Outcome</dt><dd>A web application guiding patients through the coordinated care process, explaining each stage and enabling direct contact with a care coordinator.</dd></div>
+            </dl>
+            <div class="tags"><span class="tag">User research</span><span class="tag">Process mapping</span><span class="tag">UX prototyping</span><span class="tag">Pitching</span></div>
+          </div>
+        </article>
+
+       
+      </section>
+
+   <!-- EXPERIENCE -->
+<section class="panel" id="p-experience" role="tabpanel" aria-labelledby="t-experience" hidden>
+
+  <div class="section-heading">
+    <h3 class="display">Experience</h3>
+    <p class="section-intro">
+      My professional experience combines business analysis with stakeholder-facing
+      work in international technology environments. My earlier roles helped me
+      develop structured communication, cross-functional collaboration and a strong
+      understanding of how technical and business teams work together.
+    </p>
+  </div>
+
+  <h4 class="subhead">Professional Experience</h4>
+
+  <div class="card">
+    <div class="row-head">
+      <h4>Business Analyst</h4>
+      <span class="meta">Jul 2025 – Apr 2026</span>
+    </div>
+
+    <div class="meta">Doctor.One — Digital Health Platform</div>
+
+    <p>
+      Worked with quantitative and qualitative research, product usage data and
+      clinical process information to prepare client-facing analyses and support
+      product decisions. I collaborated with product, technology and healthcare
+      teams, translating findings into requirements, patient pathways and process
+      improvements.
+    </p>
+
+    <div class="exp-sub">Selected projects</div>
+
+    <div class="project-example">
+      <strong>Thyroid patient behaviour analysis</strong>
+      <p>
+        Combined quantitative patient survey data with qualitative interviews with physicians for a project delivered in cooperation with a pharmaceutical company. The analysis helped identify recurring patterns, patient needs and barriers across the treatment process.
+      </p>
+    </div>
+
+    <div class="project-example">
+      <strong>Post-cancer follow-up pathway</strong>
+      <p>
+        Helped design a pathway coordinating regular examinations and communication between cancer survivors, physicians and care coordinators. The project resulted in a structured post-treatment care model and an initial framework for assessing improvements in continuity and quality of care. I later presented the solution during a StartUp Hub Poland acceleration showcase.
+      </p>
+    </div>
+
+    <div class="tags">
+      <span class="tag">Quantitative research</span>
+      <span class="tag">Qualitative interviews</span>
+      <span class="tag">Patient journey mapping</span>
+      <span class="tag">Analytical reporting</span>
+      <span class="tag">Stakeholder presentations</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row-head">
+      <h4>IT Recruiter</h4>
+      <span class="meta">Apr 2023 – Feb 2025</span>
+    </div>
+
+    <div class="meta">BNP Paribas CIB</div>
+
+    <p>
+      • Worked with international technology teams, conducted structured technical
+      and competency interviews and coordinated multi-stage recruitment processes
+      with senior stakeholders.
+    </p>
+
+    <p>
+      • Recruiting for roles across a large financial organisation gave me a broader
+      understanding of how technical, product and business functions interact.
+      This experience now helps me communicate across disciplines, understand
+      responsibilities within project teams and collaborate effectively in
+      interdisciplinary environments.
+    </p>
+
+    <div class="tags">
+      <span class="tag">Stakeholder communication</span>
+      <span class="tag">Technical roles</span>
+      <span class="tag">Cross-functional collaboration</span>
+      <span class="tag">International environment</span>
+    </div>
+  </div>
+
+  <h4 class="subhead">Related Analytical &amp; Research Experience</h4>
+  <p class="subnote">
+    Academic and volunteer projects that allowed me to apply analytical, research
+    and coordination skills beyond formal employment.
+  </p>
+
+  <div class="card">
+    <div class="row-head">
+      <h4>Vice Chair</h4>
+      <span class="meta"><span class="todo">PLACEHOLDER — start date</span> – present</span>
+    </div>
+
+    <div class="meta">Artificial Intelligence Academic Research Group · Lodz University of Technology</div>
+
+    <p>
+      Contributing to an interdisciplinary project with the Medical University of Lodz focused on developing an application for collecting patient-reported data before and after breast surgery. The resulting dataset is used to predict postoperative complications and identify the factors associated with different patient outcomes. As Vice Chair, I also support project coordination, research activities and collaboration with academic partners.
+    </p>
+
+    <p>
+      The project aims to create a structured data collection process that can support
+      the future analysis of patient experiences, recovery and outcomes across different
+      stages of care.
+    </p>
+
+    <div class="tags">
+      <span class="tag">Research project</span>
+      <span class="tag">Data collection</span>
+      <span class="tag">Digital health</span>
+      <span class="tag">Project coordination</span>
+      <span class="tag">Interdisciplinary collaboration</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="row-head">
+      <h4>Coordinator for Network Development &amp; Analysis</h4>
+      <span class="meta todo">PLACEHOLDER — dates</span>
+    </div>
+
+    <div class="meta">ESN Poland · Network Care Team · Volunteer role</div>
+
+    <p>
+      Consolidated, structured and compared multi-year data from local ESN sections
+      across Poland. Prepared a nationwide analytical report highlighting changes over
+      time, differences between sections and areas requiring further development.
+    </p>
+
+    <p>
+      The findings supported section benchmarking, network development and data-informed
+      planning at the national level.
+    </p>
+
+    <div class="tags">
+      <span class="tag">Data analysis</span>
+      <span class="tag">Longitudinal analysis</span>
+      <span class="tag">Benchmarking</span>
+      <span class="tag">Analytical reporting</span>
+      <span class="tag">Data storytelling</span>
+    </div>
+  </div>
+
+</section>
+
+      <!-- EDUCATION -->
+      <section class="panel" id="p-education" role="tabpanel" aria-labelledby="t-education" hidden>
+        <h3 class="display">Education &amp; International Learning</h3>
+        <p class="lede">
+          Although based in Poland, I study Biomedical Engineering entirely in English at the
+          International Faculty of Engineering at Lodz University of Technology and have broadened
+          my international experience through ECIU courses and an Erasmus+ programme across Europe.
+        </p>
+
+        <h4 class="subhead">Academic Education</h4>
+        <div class="card">
+          <div class="row-head"><h4>BEng Biomedical Engineering &amp; Technologies</h4><span class="meta">2023 – Feb 2027</span></div>
+          <div class="meta">Lodz University of Technology</div>
+          <p>English-taught engineering programme combining machine learning, signal processing, data analysis and biomedical technologies. Currently finishing engineering thesis, which is focused on Parkinson's disease detection using voice biomarkers and machine learning.</p>
+        </div>
+        <div class="card">
+          <div class="row-head"><h4>BSc Management</h4><span class="meta">Completed 2025</span></div>
+          <div class="meta">WSB Merito University, Łódź</div>
+          <p>Built a strong understanding of business strategy, project management and organisational decision-making, complementing my technical background.</p>
+        </div>
+
+        <h4 class="subhead">Selected ECIU University Courses</h4>
+        <p class="subnote">ECIU University is a European alliance that enables students to complete selected academic courses at partner universities across Europe.</p>
+        <div class="card">
+          <div class="row-head"><h4>Machine Learning</h4><span class="meta">Jan – Apr 2026</span></div>
+          <div class="meta">Dublin City University, Ireland</div>
+          <p>Applied machine learning course covering data preparation, model development, evaluation and neural networks.</p>
+        </div>
+        <div class="card">
+          <div class="row-head"><h4>AI in Business and Society</h4><span class="meta">June 2026</span></div>
+          <div class="meta">Linköping University, Sweden</div>
+          <p>Explored the business, organisational and societal implications of artificial intelligence.</p>
+        </div>
+        <h4 class="subhead">Erasmus+ Blended Intensive Programme</h4>
+        <p class="subnote">A Blended Intensive Programme is a short-term Erasmus+ mobility format combining online learning with an intensive study period at a partner university.</p>
+        <div class="card">
+          <div class="row-head"><h4>Lighting and Information Technologies for Vision, Perception Quality and Well-Being</h4><span class="meta">February 2026</span></div>
+          <div class="meta">University of Florence, Italy</div>
+          <p>Explored the relationship between lighting technologies, visual perception, information systems and human well-being.</p>
+        </div>
+
+        <h4 class="subhead">Certifications</h4>
+        <p class="subnote">Selected courses and certificates supporting my development in data, artificial intelligence and international communication.</p>
+
+        <div class="card">
+          <div class="row-head"><h4>Data &amp; AI Fundamentals</h4><span class="meta">June 2026</span></div>
+          <div class="meta">Accenture · Corporate Readiness Certificate Program</div>
+          <p>Accenture-led course covering the foundations of data, artificial intelligence and their practical applications in business.</p>
+        </div>
+
+        <div class="card">
+          <div class="row-head"><h4>Intelligent Data Analysis with AI</h4><span class="meta">April 2025</span></div>
+          <div class="meta">Girls Code Fun · Spring into Tech</div>
+          <p>Practical workshop focused on using AI tools to support data analysis, interpretation and insight generation.</p>
+        </div>
+
+        <div class="card">
+          <div class="row-head"><h4>English Language Proficiency — C1</h4></div>
+          <div class="meta">Lodz University of Technology</div>
+          <p>University-certified C1 English proficiency.</p>
+        </div>
+      </section>
+
+      <!-- COMMUNITY & LEADERSHIP -->
+      <section class="panel" id="p-community" role="tabpanel" aria-labelledby="t-community" hidden>
+
+        <div class="section-heading">
+          <h3 class="display">Community &amp; Leadership</h3>
+          <p class="section-intro">
+            Long-term involvement in initiatives supporting women in STEM,
+            international education and student communities.
+          </p>
+        </div>
+
+        <div class="grid2 community-grid">
+
+          <article class="card community-card">
+            <div class="row-head">
+              <h4>Girls Future Ready Foundation</h4>
+              <span class="meta">2026</span>
+            </div>
+            <div class="meta">Girls Future Ready Summit · Organising Team</div>
+
+            <p>
+              I am part of the organising team behind the Girls Future Ready Summit,
+              a 1,000-person event featuring speakers including former Finnish Prime
+              Minister Sanna Marin. I create promotional content and support the
+              event's communications and delivery.
+            </p>
+
+            <p>
+              I strongly identify with the foundation's mission of helping young women
+              build the confidence, skills and courage to shape their own futures.
+            </p>
+
+            <div class="community-highlight">
+              <strong>HerStory Finalist</strong>
+              <p>
+                Selected as a finalist in the HerStory programme for an AI in Healthcare
+                project developed with Roche.
+              </p>
+            </div>
+
+            <div class="tags">
+              <span class="tag">Content creation</span>
+              <span class="tag">Event communications</span>
+              <span class="tag">Community building</span>
+              <span class="tag">AI in Healthcare</span>
+            </div>
+          </article>
+
+          <article class="card community-card">
+            <div class="row-head">
+              <h4>Girls Code Fun</h4>
+              <span class="meta">Jun 2025 – present</span>
+            </div>
+            <div class="meta">STEAM Mentor</div>
+
+            <p>
+              I mentor high-school girls interested in STEAM, helping them explore
+              technology, build confidence in their abilities and define their
+              development goals.
+            </p>
+
+            <p>
+              I have also participated in several mentoring programmes myself and
+              represented the foundation at Women in Tech. I value the opportunity
+              to share my experience while helping create a strong and supportive
+              community for young women.
+            </p>
+
+            <div class="tags">
+              <span class="tag">STEAM mentoring</span>
+              <span class="tag">Career guidance</span>
+              <span class="tag">Community representation</span>
+              <span class="tag">Women in tech</span>
+            </div>
+          </article>
+
+        </div>
+
+        <article class="card community-card esn-card">
+          <div class="row-head">
+            <h4>Erasmus Student Network</h4>
+            <span class="meta">2022 – present</span>
+          </div>
+          <div class="meta">Local &amp; National Leadership</div>
+
+          <p class="oneliner">
+            Roles spanning project management, education, governance, mentoring,
+            communications and network development.
+          </p>
+
+          <p>
+            Over several years in ESN, I have led volunteer teams, coordinated complex
+            initiatives and collaborated across local and national structures in an
+            international environment.
+          </p>
+
+          <div class="esn-role-group">
+            <strong>Leadership &amp; Governance</strong>
+            <p>
+              Local Representative · Local Education Officer · President of the Audit
+              Commission · Project Manager · Mentoring Manager
+            </p>
+          </div>
+
+          <div class="esn-role-group">
+            <strong>Projects &amp; Events</strong>
+            <p>
+              Head of the Organising Committee for Integration Weekend 2026 ·
+              Coordinator of the Academic Job Fair · Organising Committee Member for
+              the ESN National Assembly Łódź 2022, Integration Weekend 2022 and the
+              25th Anniversary of ESN-EYE Łódź
+            </p>
+          </div>
+
+          <div class="esn-role-group">
+            <strong>Training &amp; Communications</strong>
+            <p>Trainer · TikTok Coordinator</p>
+          </div>
+
+          <div class="esn-role-group">
+            <strong>ESN Poland</strong>
+            <p>
+              Member of the Support Team for Education &amp; Youth · National Assembly
+              Administrator · Chairing Team Member · Coordinator for Network Development
+              &amp; Analysis in the Network Care Team
+            </p>
+          </div>
+
+          <div class="tags">
+            <span class="tag">Team leadership</span>
+            <span class="tag">Project management</span>
+            <span class="tag">International collaboration</span>
+            <span class="tag">Training</span>
+            <span class="tag">Network development</span>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- CONTACT -->
+      <section class="panel" id="p-contact" role="tabpanel" aria-labelledby="t-contact" hidden>
+        <div class="contact">
+          <h3 class="big display">Get in<br>touch</h3>
+          <div class="contact-card">
+            <div class="upper" style="color:var(--peony); font-size:12px; margin-bottom:14px">Contact</div>
+            <div class="c"><span>Phone</span> +48 798 410 873</div>
+            <div class="c"><span>Email</span> <a href="mailto:ewelinapilatowicz@gmail.com">ewelinapilatowicz@gmail.com</a></div>
+            <div class="c"><span>LinkedIn</span> <a href="https://linkedin.com/in/ewelina-pilatowicz" target="_blank" rel="noopener">linkedin.com/in/ewelina-pilatowicz</a></div>
+            <div class="c"><span>Location</span> Warsaw </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Skrypt w osobnym pliku -->
+  <script src="script.js"></script>
+</body>
+</html>
